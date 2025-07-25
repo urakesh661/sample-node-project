@@ -1,0 +1,17 @@
+{
+  "name": "sample-node-project",
+  "framework": "docker",
+  "build": {
+    "command": "docker-compose up --build",
+    "output": "dist"
+  },
+  "routes": [
+    {
+      "path": "/",
+      "script": "node app.js"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
