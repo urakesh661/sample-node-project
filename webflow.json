@@ -1,5 +1,4 @@
 {
-  "name": "sample-node-project",
   "cosmic": {
     "framework": "custom",
     "build": {
