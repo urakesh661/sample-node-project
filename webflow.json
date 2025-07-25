@@ -1,17 +1,10 @@
 {
   "name": "sample-node-project",
-  "framework": "docker",
-  "build": {
-    "command": "docker-compose up --build",
-    "output": "dist"
-  },
-  "routes": [
-    {
-      "path": "/",
-      "script": "node app.js"
+  "cosmic": {
+    "framework": "custom",
+    "build": {
+      "command": "npm install && npm run build",
+      "output": "dist"
     }
-  ],
-  "env": {
-    "NODE_ENV": "production"
   }
 }
